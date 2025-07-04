@@ -7,7 +7,6 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   experimental: {
-    appDir: true,
     optimizeCss: true,
     scrollRestoration: true,
   },
@@ -21,7 +20,6 @@ const nextConfig = {
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     unoptimized: true,
   },
-  // Enable compression
   compress: true,
 };
 
