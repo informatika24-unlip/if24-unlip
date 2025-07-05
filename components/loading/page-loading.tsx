@@ -14,7 +14,7 @@ export function PageLoading() {
           IF24
         </motion.div>
         <motion.p className="text-slate-600 dark:text-slate-400" animate={{ opacity: [0.5, 1, 0.5] }} transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY }}>
-          Loading LinkHub...
+          Loading...
         </motion.p>
       </motion.div>
     </div>

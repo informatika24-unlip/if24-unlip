@@ -31,13 +31,13 @@ export function MemberDetailModal({ member, isOpen, onClose }: MemberDetailModal
   const getRoleIcon = (specialRole?: string) => {
     switch (specialRole) {
       case "leader":
-        return <Crown className="w-5 h-5 text-yellow-500" />;
+        return <Crown className="w-5 h-5 text-neutral-950 dark:text-neutral-50" />;
       case "secretary":
-        return <FileText className="w-5 h-5 text-green-500" />;
+        return <FileText className="w-5 h-5 text-neutral-950 dark:text-neutral-50" />;
       case "treasurer":
-        return <Coins className="w-5 h-5 text-purple-500" />;
+        return <Coins className="w-5 h-5 text-neutral-950 dark:text-neutral-50" />;
       default:
-        return <Star className="w-5 h-5 text-blue-500" />;
+        return <Star className="w-5 h-5 text-neutral-950 dark:text-neutral-50" />;
     }
   };
 

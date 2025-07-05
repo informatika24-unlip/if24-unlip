@@ -1,11 +1,93 @@
-<<<<<<< HEAD
-# if24-unlip
-=======
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 IF24 UNLIP
 
-## Getting Started
+> A web-based app built with Next.js, Tailwind CSS, and TypeScript for Informatika 2024 UNLIP Class.
 
-First, run the development server:
+## 🚀 Overview
+
+This is a modern web application designed using **Next.js App Router**, with styling powered by **Tailwind CSS**, and written in **TypeScript**. It serves as a foundational platform for the Informatika 2024 UNLIP project—either for internal tools, academic collaboration, or community engagement.
+
+## ✨ Features
+
+- ✅ Built using Next.js 14 with App Router
+- 🎨 Tailwind CSS for rapid UI development
+- ⚡ Optimized for fast development and deployment
+- 🔤 Custom font integration using [Geist](https://vercel.com/font)
+- 🧱 Modular folder structure for scalability
+- ☁️ Deployed on [Vercel](https://if24-unlip.vercel.app)
+
+## 📁 Project Structure
+
+```
+if24-unlip/
+├── app/
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── favicon.ico
+│   ├── members/
+│   │   └── pahe.tsx
+│   ├── not-found.tsx
+│   ├── robots.ts
+│   └── sitemape.ts
+├── components/
+│   ├── admin/
+│   │   └── admin-panel.tsx
+│   ├── loading/
+│   │   ├── member-card-skeleton.tsx
+│   │   └── page-loading.tsx
+│   ├── member/
+│   │   └── member-detail-modal.tsx
+│   ├── search/
+│   │   └── member-search.tsx
+│   ├── seo/
+│   │   ├── meta-tags.tsx
+│   │   └── structured-data.tsx
+│   ├── ui/
+│   │   ├── button.tsx
+│   │   ├── card.tsx
+│   │   ├── optimized-image.tsx
+│   │   ├── particle-background.tsx
+│   │   └── skeleton.tsx
+│   └── error-boundary.tsx
+├── lib/
+│   ├── analytics.ts
+│   ├── blur-data-url.ts
+│   └── utils.ts
+├── public/
+│   ├── member/
+│   ├── manifest.json
+│   └── site.webmanifest
+├── .eslintrc.json
+├── .gitignore
+├── next.config.js
+├── package.json
+├── postcss.config.js
+├── tailwind.config.ts
+└── tsconfig.json
+```
+
+## 🛠️ Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/informatika24-unlip/if24-unlip.git
+cd if24-unlip
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+# or
+yarn
+# or
+pnpm install
+# or
+bun install
+```
+
+### 3. Run the development server
 
 ```bash
 npm run dev
@@ -17,24 +99,24 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌐 Live Demo
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Check out the live version at:  
+👉 [https://if24-unlip.vercel.app](https://if24-unlip.vercel.app)
 
-## Learn More
+## 📦 Deployment
 
-To learn more about Next.js, take a look at the following resources:
+This project is set up for instant deployment on [Vercel](https://vercel.com/). Just connect the repo and you're good to go!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🙌 Credits
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Made with ❤️ by the **Informatika 2024 UNLIP** team.  
+Powered by [Next.js](https://nextjs.org/) and [Vercel](https://vercel.com/).
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
->>>>>>> 32f2919 (Initial commit from Create Next App)
+This project is licensed under the [MIT License](LICENSE).

@@ -151,7 +151,7 @@ export default function LinkHub() {
             IF24
           </motion.div>
           <motion.p className="text-slate-600 dark:text-slate-400" animate={{ opacity: [0.5, 1, 0.5] }} transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY }}>
-            Loading LinkHub...
+            Loading...
           </motion.p>
         </motion.div>
       </div>
@@ -320,7 +320,7 @@ export default function LinkHub() {
 
             <motion.div className="grid grid-cols-2 gap-4 mt-6" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1 }}>
               {[
-                { number: "12", label: "Members", color: "text-cyan-500" },
+                { number: "19", label: "Members", color: "text-cyan-500" },
                 { number: "2024", label: "Angkatan", color: "text-blue-500" },
               ].map((stat, index) => (
                 <motion.div key={index} className="text-center p-3 glass-card dark:glass-card-dark rounded-xl" whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 400, damping: 17 }}>
