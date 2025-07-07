@@ -434,7 +434,7 @@ export default function MembersPage() {
               transition={{ delay: index * 0.1, duration: 0.5 }}
               whileHover={{ y: -8, scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="bg-slate-800 dark:bg-slate-900 rounded-3xl p-6 transition-all duration-300 shadow-lg hover:shadow-2xl group relative overflow-hidden cursor-pointer"
+              className="bg-slate-50 dark:bg-slate-900 rounded-3xl p-6 transition-all duration-300 shadow-lg hover:shadow-2xl group relative overflow-hidden cursor-pointer"
               onClick={() => handleMemberClick(member)}
             >
               {/* Special Role Badge */}
@@ -478,10 +478,10 @@ export default function MembersPage() {
               <div className="space-y-3">
                 <div className="flex items-start justify-between">
                   <div>
-                    <h3 className="text-xl font-bold text-white mb-1 leading-tight">{member.name}</h3>
+                    <h3 className="text-xl font-bold text-slate-950 dark:text-slate-100 mb-1 leading-tight">{member.name}</h3>
                     <div className="flex items-center gap-2">
                       {member.specialRole && getPositionIcon(member.specialRole)}
-                      <p className="text-slate-300 font-medium">{member.position}</p>
+                      <p className="text-slate-700 dark:text-slate-300 font-medium">{member.position}</p>
                     </div>
                   </div>
 
@@ -490,7 +490,7 @@ export default function MembersPage() {
                     href={`https://instagram.com/${member.instagram.replace("@", "")}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-slate-400 hover:text-pink-400 transition-colors duration-300 font-mono text-xs"
+                    className="text-slate-600 dark:text-slate-400 hover:text-pink-400 transition-colors duration-300 font-mono text-xs"
                     onClick={(e) => {
                       e.stopPropagation();
                       analytics.track(AnalyticsEvents.SOCIAL_CLICK, {
