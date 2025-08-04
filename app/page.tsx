@@ -293,7 +293,7 @@ export default function LinkHub() {
               <motion.div className={`aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br ${gradients.photo} p-1 transition-transform duration-300`} whileHover={{ scale: 1.02 }}>
                 <motion.div className="w-full h-full rounded-2xl overflow-hidden bg-slate-100 dark:bg-slate-700 relative cursor-pointer" onClick={handleFullscreenToggle} whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                   <Image
-                    src="/placeholder.svg?height=400&width=600&text=Class+Photo+Informatika+24"
+                    src="/_MG_8492.JPG?height=400&width=600&text=Class+Photo+Informatika+24"
                     alt="Informatika 24 Class Photo"
                     width={600}
                     height={400}
@@ -386,7 +386,7 @@ export default function LinkHub() {
             >
               <motion.div className="relative max-w-6xl max-h-full" initial={{ scale: 0.5, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.5, opacity: 0 }} transition={{ type: "spring", stiffness: 300, damping: 30 }}>
                 <Image
-                  src="/placeholder.svg?height=800&width=1200&text=Class+Photo+Informatika+24"
+                  src="/_MG_8492.JPG?height=800&width=1200&text=Class+Photo+Informatika+24"
                   alt="Informatika 24 Class Photo - Fullscreen"
                   width={1200}
                   height={800}

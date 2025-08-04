@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useMemo } from "react";
-import { ArrowLeft, Users, Star, Settings } from "lucide-react";
+import { ArrowLeft, Users, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -27,58 +27,38 @@ interface Member {
   achievements?: string[];
   joinDate?: string;
 }
+// MENAMBAHKAN ROLE
+// specialRole: "leader" Untuk Ketua
+// specialRole: "secretary" Untuk Sekertaris
+// specialRole: "treasurer" Untuk Bendahara
 
 const membersData: Member[] = [
   {
     id: 1,
-    name: "M Hasbi Hasbullah",
+    name: "Seli Nopiani",
     position: "Ketua Kelas",
-    instagram: "@hasbihasbullh_",
-    image: "/member/hasbi.png?height=200&width=200",
+    instagram: "@slinpiii.ii",
+    image: "/member/seli.jpg?height=200&width=200",
     isLeader: true,
     specialRole: "leader",
     bio: "",
-    skills: ["Junior Web Developer"],
-    achievements: [],
+    skills: [],
+    achievements: ["Member of Himpunan Informatika", "Member Of UKM LDK Al-Faruq"],
     joinDate: "September 2024",
   },
   {
     id: 2,
-    name: "Muhammad Ihsan",
-    position: "Sekretaris",
-    instagram: "@sann_kuyy",
-    image: "/member/ihsan.jpg?height=200&width=200",
-    specialRole: "secretary",
-    bio: "",
-    skills: [],
-    achievements: ["Member of Himpunan Informatika"],
-    joinDate: "September 2024",
-  },
-  {
-    id: 3,
-    name: "Seli Nopiani",
-    position: "Bendahara",
-    instagram: "@slinpiii.ii",
-    image: "/member/seli.jpg?height=200&width=200",
-    specialRole: "treasurer",
-    bio: "",
-    skills: [],
-    achievements: ["Member of Himpunan Informatika"],
-    joinDate: "September 2024",
-  },
-  {
-    id: 4,
     name: "Ade Rama",
     position: "Anggota",
     instagram: "@rama_tcp",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/member/ade.jpg?height=200&width=200",
     bio: "",
     skills: [],
     achievements: [],
     joinDate: "September 2024",
   },
   {
-    id: 5,
+    id: 3,
     name: "Akbar Maulana",
     position: "Anggota",
     instagram: "@akbar190603",
@@ -89,7 +69,7 @@ const membersData: Member[] = [
     joinDate: "September 2024",
   },
   {
-    id: 6,
+    id: 4,
     name: "Andika Wahyu",
     position: "Anggota",
     instagram: "@andikawahyu_15",
@@ -100,7 +80,7 @@ const membersData: Member[] = [
     joinDate: "September 2024",
   },
   {
-    id: 7,
+    id: 5,
     name: "Fadilatul Hamid",
     position: "Anggota",
     instagram: "@jaisyullah_21",
@@ -111,7 +91,7 @@ const membersData: Member[] = [
     joinDate: "September 2024",
   },
   {
-    id: 8,
+    id: 6,
     name: "Imron Firmansyah",
     position: "Anggota",
     instagram: "@meunihemm0_0",
@@ -122,7 +102,7 @@ const membersData: Member[] = [
     joinDate: "September 2024",
   },
   {
-    id: 9,
+    id: 7,
     name: "Isyal Fauzi",
     position: "Anggota",
     instagram: "@isyl.fzi27",
@@ -133,14 +113,36 @@ const membersData: Member[] = [
     joinDate: "September 2024",
   },
   {
-    id: 10,
+    id: 8,
     name: "Kamila Eka Yantri",
     position: "Anggota",
     instagram: "@__j.kmlxyn",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/member/Kamila.jpg?height=200&width=200",
     bio: "",
     skills: [],
     achievements: [],
+    joinDate: "September 2024",
+  },
+  {
+    id: 9,
+    name: "M Hasbi Hasbullah",
+    position: "Anggota",
+    instagram: "@hasbihasbullh_",
+    image: "/member/hasbi.jpg?height=200&width=200",
+    bio: "",
+    skills: ["Junior Web Developer"],
+    achievements: [],
+    joinDate: "September 2024",
+  },
+  {
+    id: 10,
+    name: "Muhammad Ihsan",
+    position: "anggota",
+    instagram: "@sann_kuyy",
+    image: "/member/ihsan.jpg?height=200&width=200",
+    bio: "",
+    skills: [],
+    achievements: ["Member of Himpunan Informatika", "Member Of UKM LDK Al-Faruq"],
     joinDate: "September 2024",
   },
   {
@@ -181,7 +183,7 @@ const membersData: Member[] = [
     name: "Sazkia Salsabila",
     position: "Anggota",
     instagram: "@aikzasbila",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/member/Sazkia.jpg?height=200&width=200",
     bio: "",
     skills: [],
     achievements: ["Member of Himpunan Informatika"],
@@ -192,7 +194,7 @@ const membersData: Member[] = [
     name: "Sendi Ardiansyah",
     position: "Anggota",
     instagram: "@sendiardsyh_",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/member/Sendi_A.jpg?height=200&width=200",
     bio: "",
     skills: [],
     achievements: [],
@@ -203,7 +205,7 @@ const membersData: Member[] = [
     name: "Sendi Maulana",
     position: "Anggota",
     instagram: "@sndimlna78_",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/member/Sendi_M.jpg?height=200&width=200",
     bio: "",
     skills: [],
     achievements: ["Member of Himpunan Informatika"],
